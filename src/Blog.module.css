@@ -1,0 +1,11 @@
+.header { background: #263888; color: white; padding: 20px max(24px, calc((100% - 1072px) / 2)); }
+.list, .compact { display: flex; flex-wrap: wrap; gap: 16px; }
+.card { flex: 0 0 calc((100% - 48px) / 4); min-width: 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 9px #1a24441c; transition: transform .2s; }
+.card:hover { transform: translateY(-3px); }
+.card svg { display: block; width: 100%; }
+.body { padding: 14px; }
+.body small { color: #3448aa; }
+.body footer { font-size: .82rem; }
+@media (max-width: 940px) { .card { flex-basis: calc((100% - 32px) / 3); } }
+@media (max-width: 730px) { .card { flex-basis: calc((100% - 16px) / 2); } }
+@media (max-width: 510px) { .card { flex-basis: 100%; } }
